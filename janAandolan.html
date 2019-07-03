@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Jal Shakti Abhiyan </title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+   
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+    rel = "stylesheet">
+
+    <!--ptint -->
+    <link rel="stylesheet" href="assets/css/print.css">
+   
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+               <img class="img-responsive img-fluid jalShakti_logo" src="assets/img/logo.png" alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                 
+                <li >
+                    <a href="index.php">Rainwater Harvesting</a>
+                   
+                </li>
+                <li>
+                    <a href="reuseWater.html">Reuse of Treated Waste Water</a>
+                </li>
+                <li >
+                    <a href="rejuvenation.html">Rejuvenation of Water Bodies</a>
+                   
+                </li>
+                <li>
+                    <a href="plantation.html">Plantation</a>
+                </li>   
+                <li class="active">
+                    <a href="janAandolan.html">Jan Andolan</a>
+                </li>            
+            </ul> 
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="form-group ml-5">
+                       <small>Baseline (30-06-2019)</small>
+                        <input type="text" placeholder="select date" class="form-control" id = "datepicker-13">
+                      </div>
+               
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                 
+                     <ul class="nav navbar-nav ml-auto">                       
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Phase</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">State Name</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">District</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">City Name</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>                            
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            <a class="printButton" onclick="window.print();return false;"><i class="fa fa-print" aria-hidden="true"></i>Print</a>
+            <h2 class="formHeading">Jan Andolan</h2>
+            
+            <div class="RainwaterTable">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>#</th>                       
+                        <th>Jan Andolan Activities</th>
+                        <th>Number of Events</th>
+                        <th>Number of Participants/Attendance</th>   
+                                            
+                    </tr>                    
+                    </thead>
+                    <tbody>                    
+                    <tr>
+                        <th>1</th>
+                        <td>Poster/Printing/Slogan/Essay/Debate Competitions </td>
+                        <td>
+                            <div class="form-group">                        
+                            <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                            </div>
+                        </td>
+                        <td>
+                           <div class="form-group">                        
+                           <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                           </div>
+                        </td> 
+                    </tr>
+                    <tr>
+                            <th>2</th>
+                            <td>Public Awareness Meeting/Discussions </td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>
+                            <td>
+                               <div class="form-group">                        
+                               <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                               </div>
+                            </td>                             
+                        </tr>
+                        <tr>
+                                <th>3</th>
+                                <td>Rallies/Routs March etc </td>
+                                <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>
+                                <td>
+                                   <div class="form-group">                        
+                                   <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                   </div>
+                                </td>                                             
+                                
+                            </tr>
+                    
+                            <tr>
+                                    <th>4</th>
+                                    <td>Dance/Drama/Kathputli/Nukkar/Nataks</td>
+                                    <td>
+                                        <div class="form-group">                        
+                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                        </div>
+                                    </td>
+                                    <td>
+                                       <div class="form-group">                        
+                                       <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                       </div>
+                                    </td> 
+                                </tr> 
+                                <tr>
+                                    <th>4</th>
+                                    <td>Others Modes of Mass Cwareness Campaigns</td>
+                                    <td>
+                                        <div class="form-group">                        
+                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                        </div>
+                                    </td>
+                                    <td>
+                                       <div class="form-group">                        
+                                       <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                       </div>
+                                    </td> 
+                                </tr> 
+                                <tr>
+                                    <th>4</th>
+                                    <th>Total</th>
+                                    <td>
+                                        <div class="form-group">                        
+                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                        </div>
+                                    </td>
+                                    <td>
+                                       <div class="form-group">                        
+                                       <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                       </div>
+                                    </td> 
+                                </tr> 
+                    
+                    </tbody>                   
+                </table>
+                <div class="textNote">
+                    <p style="color: #000;"><i><span class="text-danger">*Note: </span> Photographs & Videos of Jan Andolan Activities  to be uploaded</i></p>
+                </div>
+               <div class="row">
+                   <div class="col-md-4 imgCol">
+                    <div class="input-group mb-3" >
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">1st images</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01" onchange="readURL(this);">
+                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+
+                        
+                        </div>
+                 </div>    
+                 <img id="blah" src="http://placehold.it/180" alt="your image"  style=" width: 40%; "> 
+                   </div>
+                   <div class="col-md-4 imgCol">
+                    <div class="input-group mb-3" >
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">2nd images</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01" onchange="readURL(this);">
+                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+
+                        
+                        </div>
+                 </div>    
+                 <img id="blah" src="http://placehold.it/180" alt="your image"  style=" width: 40%; "> 
+                   </div>
+                   <div class="col-md-4 imgCol">
+                        <div class="input-group mb-3" >
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">3rd images</span>
+                                </div>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputGroupFile01" onchange="readURL(this);">
+                                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        
+                                
+                                </div>
+                         </div>    
+                         <img id="blah" src="http://placehold.it/180" alt="your image"  style=" width: 40%; "> 
+                           </div>
+                   </div>
+               </div>          
+
+                <div class="text-center">
+                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                          <i class="fas fa-align-left"></i>
+                       <span><b>Submit</b></span>
+                   </button>
+                </div>
+            </div>
+         </div>
+    </div>
+
+
+
+
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="assets\js\jquery-3.4.1.min.js"></script>
+     <!-- datepicker -->
+     <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+     <script src="assets/js/moment-with-locales.min.js"></script>
+ 
+     <!-- Bootstrap JS -->
+    <script src="assets\js\bootstrap.min.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+   
+ 
+    <script type="text/javascript">           
+
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $(function(){    
+    var enableDays = ["3-7-2019", "4-7-2019"];    
+    function enableAllTheseDays(date) {
+        var sdate = $.datepicker.formatDate( 'd-m-yy', date)
+        console.log(sdate)
+        if($.inArray(sdate, enableDays) != -1) {
+            return [true];
+        }
+        return [false];
+    }
+    
+    $('#datepicker-13').datepicker({dateFormat: 'dd-mm-yy', beforeShowDay: enableAllTheseDays});
+})
+ 
+    </script>
+</body>
+
+</html>
