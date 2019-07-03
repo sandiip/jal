@@ -63,10 +63,10 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     
-                        <select class="form-control ml-3" style="width: 30%">
-                          <option><pre>Baseline (30.06.2019)</pre></option>
-                          <option value=""></option>
-                        </select>
+                        <div class="form-group ml-5">
+                            <small>Baseline (30-06-2019)</small>
+                             <input type="text" placeholder="select date" class="form-control" id = "datepicker-13">
+                           </div>
                         
                     <ul class="nav navbar-nav ml-auto">
                        
@@ -91,26 +91,23 @@
             </nav>
             <a class="printButton" onclick="window.print();return false;"><i class="fa fa-print" aria-hidden="true"></i>Print</a>
 
-            <h2 class="formHeading"> Reuse of Treated Waste Water</h2>
+            <h2 class="formHeading"> Reuse of Treated Waste Water from STP</h2>
             
             <div class="RainwaterTable">
                 <table class="table table-bordered text-center">
                     <thead>
+                        <tr> <td colspan="4"><strong>Reuse</strong> </td>        </tr>
                     <tr>
                         <th>#</th>                       
-                        <th>Category of Establishments</th>
-                        <th>Number of Establishments using treated waste water</th>
-                        <th>Quantity of treated waste water reused</th>                         
+                        <th>Category of Establishment</th>
+                        <th>Number of Establishments Using Treated Waste Water</th>
+                        <th>Quantity of Treated Waste Water Reused Daily</th>                         
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>  
-                    <th>1</th>                       
-                        <td colspan="3"><strong>Reuse</strong> </td>                         
-                    </tr>
+                    <tbody>                    
                     <tr>
                         <th>(a)</th>
-                        <td>Industry </td>
+                        <td>Horticulture/Landscaping</td>
                         <td>
                             <div class="form-group">                        
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -125,7 +122,7 @@
                     </tr>
                     <tr>
                     <th>(b)</th>
-                        <td>Power Plant</td>
+                        <td>Agriculture</td>
                         <td>
                             <div class="form-group">                        
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -139,7 +136,7 @@
                     </tr>
                     <tr>
                     <th>(c)</th>
-                        <td>Commercial</td>
+                        <td>Fire Hydrant</td>
                         <td>
                             <div class="form-group">                        
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -155,7 +152,7 @@
                     
                     <tr>
                        <th>(d)</th>
-                        <td>Agriculture</td>
+                        <td>Construction Activity</td>
                         <td>
                             <div class="form-group">                        
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -171,7 +168,7 @@
  
                     <tr>
                        <th>(e)</th>
-                        <td>Horticulture/Landscaping</td>
+                        <td>Power Plant</td>
                         <td>
                             <div class="form-group">                        
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -186,7 +183,7 @@
                     </tr>
                     <tr>
                         <th>(f)</th>
-                        <td>Fire Hydrant</td>
+                        <td>Industry</td>
                         <td>
                             <div class="form-group">                        
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -202,7 +199,7 @@
 
                     <tr>
                             <th>(g)</th>
-                            <td>Construction Activity</td>
+                            <td>Commercial</td>
                             <td>
                                 <div class="form-group">                        
                                 <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -232,68 +229,69 @@
                                
                             </tr>
                     
-                    </tbody>
+                    </tbody>                    
+                </table>
 
+
+                <table class="table table-bordered ">
+                    <thead>
+                    <tr>
+                        <tr>                                                  
+                            <td colspan="6"><strong>Dual Piping</strong> </td>                         
+                          </tr>
+                        <th>#</th>                       
+                        <th>Category of Establishment</th>
+                        <th>Number of Establishments With Dual Piping System</th>
+                        <th>Number of Establishments Where Dual Piping has Been Made Functional</th>
+                        <th>Quantity of Treated Waste Water Reused Daily</th>
+                        <th>Number of Establishments Where Dual Piping Work has Been Initiated</th>                         
+                    </tr>
+                    </thead>
                     <tbody>
-                            <tr>  
-                            <th>2</th>                       
-                                <td colspan="3"><strong>Dual Piping</strong> </td>                         
-                            </tr>
-                            <tr>
-                                <th>(a)</th>
-                                <td>Group Housing Society </td>
-                                <td>
-                                    <div class="form-group">                        
-                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-group">                        
-                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                    </div>
-                                </td>                        
-                                
-                            </tr>
-                            <tr>
-                                <th>(b)</th>
-                                <td colspan="3">Public Building </td>                                             
-                            </tr>
-                            <tr>
-                            <th class="text-right">(i)</th>
-                                <td>Central</td>
-                                <td>
-                                    <div class="form-group">                        
-                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-group">                        
-                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                    </div>
-                                </td>                   
-                                 
-                            </tr>
+                       
+                        <tr>
+                            <th>(a)</th>
+                            <td>Group Housing Society </td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>    
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                             </td>    
+                              <td>
+                              <div class="form-group">                        
+                                 <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                 </div>
+                              </td>                        
                             
-                            <tr>
-                               <th class="text-right">(ii)</th>
-                                <td>State/UT</td>
-                                <td>
-                                    <div class="form-group">                        
-                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-group">                        
-                                            <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                    </div>
-                                </td>               
-           
-                            </tr>
-         
-                            <tr>
-                               <th class="text-right">(iii)</th>
-                                <td>ULB</td>
-                                <td>
+                        </tr>
+                        <tr>
+                            <th>(b)</th>
+                            <th colspan="3">Public Building </th>                                             
+                        </tr>
+                        <tr>
+                        <th class="text-right">(i)</th>
+                            <td>Central</td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>
+                            <td>
                                     <div class="form-group">                        
                                     <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
@@ -303,27 +301,23 @@
                                     <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
                                 </td>                      
-                               
-                            </tr>
-                            <tr>
-                                    <th class="text-right"></th>
-                                     <td>Total</td>
-                                     <td>
-                                         <div class="form-group">                        
-                                         <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                         </div>
-                                     </td>
-                                     <td>
-                                         <div class="form-group">                        
-                                         <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                         </div>
-                                     </td>                      
-                                    
-                                 </tr>
-                            <tr>
-                                <th>(c)</th>
-                                <td>Industry </td>
-                                <td>
+                             
+                        </tr>
+                        
+                        <tr>
+                           <th class="text-right">(ii)</th>
+                            <td>State/UT</td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">                        
+                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td> 
+                            <td>
                                     <div class="form-group">                        
                                     <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
@@ -332,13 +326,37 @@
                                     <div class="form-group">                        
                                     <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
-                                </td>                  
-                               
-                            </tr>
-        
-                            <tr>
-                                 <th>(d)</th>
-                                 <td>Commercial</td>
+                                </td>                 
+                              </tr>
+                              <tr>
+                           <th class="text-right">(iii)</th>
+                            <td>ULB</td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td> 
+                            <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>   
+
+                           
+                        </tr>
+                        <tr>
+                                <th class="text-right"></th>
+                                 <td>Total</td>
                                  <td>
                                      <div class="form-group">                        
                                      <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
@@ -348,13 +366,8 @@
                                      <div class="form-group">                        
                                      <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                      </div>
-                                 </td>                      
-                                   
-                             </tr>  
-                             <tr>
-                                    <th></th>
-                                    <th>Total Dual Piping</th>
-                                    <td>
+                                 </td>  
+                                 <td>
                                         <div class="form-group">                        
                                         <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                         </div>
@@ -363,10 +376,85 @@
                                         <div class="form-group">                        
                                         <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                         </div>
-                                    </td>                      
-                                       
-                                    </tr>
-                   </tbody>
+                                    </td>                       
+                                
+                             </tr>
+                        <tr>
+                            <th>(c)</th>
+                            <td>Industry </td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">                        
+                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                </div>
+                            </td> 
+                            <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>                    
+                           
+                        </tr>
+                              <tr>
+                             <th>(d)</th>
+                             <td>Commercial</td>
+                             <td>
+                                 <div class="form-group">                        
+                                 <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-group">                        
+                                 <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                 </div>
+                             </td> 
+                             <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>                        
+                               
+                         </tr>  
+                         <tr>
+                                <th></th>
+                                <th>Total Dual Piping</th>
+                                <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">                        
+                                    <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                    </div>
+                                </td>  
+                                <td>
+                                        <div class="form-group">                        
+                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">                        
+                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
+                                        </div>
+                                    </td>                       
+                                   
+                                 </tr>
+                                   </tbody>                
                 </table>
 
                 <div class="text-center">

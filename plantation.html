@@ -62,10 +62,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     
-                        <select class="form-control ml-3" style="width: 30%">
-                          <option><pre>Baseline (30.06.2019)</pre></option>
-                          <option value=""></option>
-                        </select>
+                        <div class="form-group ml-5">
+                            <small>Baseline (30-06-2019)</small>
+                             <input type="text" placeholder="select date" class="form-control" id = "datepicker-13">
+                           </div>
                         
                     <ul class="nav navbar-nav ml-auto">
                        
@@ -98,9 +98,9 @@
                     <tr>
                         <th>#</th>                       
                         <th>Locations</th>
-                        <th>Area Under Green Cover (in acre)</th>
+                        <th>Area Under Green Cover (in m<sup>2</sup>)</th>
                         <th>Number of Saplings* Planted</th>  
-                        <th>Number of Saplings Surviving</th>                       
+                                             
                     </tr>
                     </thead>
                     <tbody>              
@@ -117,11 +117,7 @@
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                             </div>
                         </td>   
-                        <td>
-                          <div class="form-group">                        
-                          <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                          </div>
-                        </td>                  
+                                           
                      </tr>
                     <tr>
                     <th>(b)</th>
@@ -136,11 +132,7 @@
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                             </div>
                         </td> 
-                        <td>
-                                <div class="form-group">                        
-                                <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                </div>
-                        </td>               
+                                        
                     </tr>
                     <tr>
                     <th>(c)</th>
@@ -155,17 +147,13 @@
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                             </div>
                         </td> 
-                        <td>
-                           <div class="form-group">                        
-                           <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                           </div>
-                         </td>                  
+                                         
                          
                     </tr>
                     
                     <tr>
                        <th>(d)</th>
-                        <td colspan="4">Government Buildings </td>
+                        <td colspan="3">Government Buildings </td>
                     </tr>
                     <tr>
                             <th class="text-right">(i)</th>
@@ -180,11 +168,7 @@
                                     <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
                                 </td> 
-                                <td>
-                                        <div class="form-group">                        
-                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                        </div>
-                                    </td>                   
+                                                 
                                  
                             </tr>
                             
@@ -201,11 +185,7 @@
                                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
                                 </td> 
-                                <td>
-                                        <div class="form-group">                        
-                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                        </div>
-                                    </td> 
+                                  
                             </tr>
          
                             <tr>
@@ -221,11 +201,7 @@
                                     <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
                                 </td>                      
-                                <td>
-                                        <div class="form-group">                        
-                                        <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                        </div>
-                                    </td> 
+                                 
                             </tr>
  
                     <tr>
@@ -241,11 +217,7 @@
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                             </div>
                         </td>  
-                        <td>
-                           <div class="form-group">                        
-                           <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                           </div>
-                        </td>                     
+                                          
                        
                     </tr>
                     <tr>
@@ -261,11 +233,7 @@
                             <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                             </div>
                         </td> 
-                        <td>
-                           <div class="form-group">                        
-                           <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                           </div>
-                         </td>                        
+                                             
                        
                     </tr>
 
@@ -282,11 +250,7 @@
                              <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                              </div>
                          </td>
-                         <td>
-                            <div class="form-group">                        
-                            <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                            </div>
-                         </td>                   
+                                           
                            
                      </tr>
 
@@ -303,11 +267,7 @@
                                 <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                 </div>
                             </td>
-                            <td>
-                               <div class="form-group">                        
-                               <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                               </div>
-                            </td>                   
+                                               
                               
                         </tr>
 
@@ -324,11 +284,7 @@
                                     <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                     </div>
                                 </td>
-                                <td>
-                                   <div class="form-group">                        
-                                   <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                   </div>
-                                </td>                   
+                                                 
                                   
                             </tr>
 
@@ -345,11 +301,7 @@
                                         <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
                                         </div>
                                     </td>
-                                    <td>
-                                       <div class="form-group">                        
-                                       <input type="text" class="form-control" id="usr" onkeypress="return onlynumericdot(event);" onblur="round2(this.value);" name="....">
-                                       </div>
-                                    </td>                   
+                                                     
                                       
                                 </tr>
             </tbody>
@@ -359,18 +311,59 @@
                 Photographs of plantation before and after to be uploaded
                 </i></p>
         </div>
-        <div class="input-group mb-3" style="width: 41%;">
-            <div class="input-group-prepend">
-              <span class="input-group-text">2nd images</span>
-            </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01" onchange="readURL(this);">
-              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        <div  class="text-center PhotographsSection">
+                <h4 >Upload Photographs</h4>
+              </div>
+          <div class="row">
+                <div class="imgForm form5">
+                <!-- <h6  class="text-center ImgformHeading">Under Rejuvenation</h6> -->
+               <form>
+                    <div class="form-group">
+                      <!-- <label for="exampleInputEmail1">Email address</label> -->
+                      <input type="name" class="form-control customInput" id="nameInputEmail1" aria-describedby="emailHelp" placeholder="Name of Water Body">
+                     </div>
+                    <div class="form-group">
+                      <!-- <label for="exampleInputPassword1">Location</label> -->
+                      <input type="text" class="form-control customInput" id="LocationInputPassword1" placeholder="Location">
+                    </div>
+                     
+                    <div class="form-group">
+                         <!-- <label for="CategoryFormControlSelect1">Category</label> -->
+                         <select class="form-control customInput" id="CategoryFormControlSelect1">
+                           <option>---- Select Category ----</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                         </select>
+                       </div>
 
-            
-            </div>
-     </div>    
-     <img id="blah" src="http://placehold.it/180" alt="your image"> 
+                       <div class="form-group">
+                             <!-- <label for="CategoryFormControlSelect1">Category</label> -->
+                             <select class="form-control customInput" id="CategoryFormControlSelect1">
+                               <option>---- Select Area ----</option>
+                               <option>2</option>
+                               <option>3</option>
+                               <option>4</option>
+                               <option>5</option>
+                             </select>
+                         </div>
+                         
+                         <div class="input-group mtSpance">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                </div>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                    aria-describedby="inputGroupFileAddon01">
+                                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                </div>
+                              </div>
+                                
+                 </form>
+           </div>
+          </div>   
+     
 
                 <div class="text-center">
                         <button type="button" id="sidebarCollapse" class="btn btn-info">

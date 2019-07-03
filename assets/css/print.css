@@ -1,0 +1,12 @@
+@media print {
+    #sidebarCollapse, .printButton{
+      display: none !important;    
+    }
+    .formHeading{
+      margin-bottom: 30px !important; 
+    }
+    .imgCol {
+      width: 33.33% !important;
+  }
+  
+   }
